@@ -310,3 +310,110 @@ nav {
     max-width: none;
   }
 }
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark header {
+  background-color: #1e1e1e;
+}
+
+body.dark .hero {
+  background-color: #0f3d2a;
+}
+
+body.dark .services-card {
+  background: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark #site-footer {
+  background-color: #111;
+}
+
+body.dark .navbar {
+  color: #ddd;
+}
+
+/* =========================
+   MODALE
+========================= */
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #1f7a4d;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.modal-content button {
+  margin-top: 15px;
+  background: #1f7a4d;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  animation: spin 0.8s linear infinite;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
