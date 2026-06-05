@@ -49,9 +49,13 @@ nav {
 
 .navbar {
   display: flex;
-  gap: 20px;
   color: #555555;
   margin-right: 100px;
+}
+
+.nav-link {
+  padding: 10px 16px;
+  border-radius: 8px;
 }
 
 .nav-link:hover {
