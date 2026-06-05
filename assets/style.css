@@ -314,6 +314,12 @@ nav {
 /* =========================
    DARK MODE
 ========================= */
+#theme-toggle {
+  border: none;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  color: black;
+}
 
 body.dark {
   background-color: #121212;
